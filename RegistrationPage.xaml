@@ -1,0 +1,43 @@
+﻿<Page x:Class="CharityApp.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="White">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+
+        <!-- Поле ввода для фамилии -->
+        <StackPanel Margin="0,10">
+            <Label Content="Фамилия:" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox Name="SurnameInput" FontSize="18" Padding="10" BorderBrush="#FFD700" BorderThickness="2" 
+                     Height="50" VerticalContentAlignment="Center" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+
+        <!-- Поле ввода для имени -->
+        <StackPanel Margin="0,10">
+            <Label Content="Имя:" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox Name="NameInput" FontSize="18" Padding="10" BorderBrush="#FFD700" BorderThickness="2" 
+                     Height="50" VerticalContentAlignment="Center" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+
+        <!-- Поле ввода для отчества -->
+        <StackPanel Margin="0,10">
+            <Label Content="Отчество:" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox Name="PatronymicInput" FontSize="18" Padding="10" BorderBrush="#FFD700" BorderThickness="2" 
+                     Height="50" VerticalContentAlignment="Center" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+
+        <!-- Увеличенная кнопка "Вход" -->
+        <Button Content="Вход" FontSize="22" FontWeight="Bold" 
+                Background="#FFD700" Foreground="Black" 
+                Padding="15,10" Margin="0,30,0,0" 
+                BorderThickness="0" Width="200" Height="50"
+                HorizontalAlignment="Center"
+                Click="LoginButton_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray" BlurRadius="10" ShadowDepth="3"/>
+            </Button.Effect>
+        </Button>
+    </StackPanel>
+</Page>
+
+

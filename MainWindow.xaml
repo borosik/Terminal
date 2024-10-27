@@ -1,0 +1,72 @@
+﻿<Window x:Class="CharityApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Терминал Благотворительной Организации" 
+        WindowState="Maximized" 
+        WindowStyle="None"
+        Background="#FFFFFF">
+
+    <Window.Resources>
+        <!-- Стиль для кнопок -->
+        <Style x:Key="YellowButton" TargetType="Button">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#FFD700"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFA500"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Верхняя черная полоса с надписью по центру и кнопкой справа -->
+        <Border Background="#2D2F33" Height="80" VerticalAlignment="Top">
+            <Grid>
+                <!-- Надпись по центру -->
+                <TextBlock Text="Территория Передышки" 
+                           Foreground="White" 
+                           FontSize="36" 
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+
+                <!-- Кнопка "Регистрация" справа -->
+                <Button Content="Регистрация" 
+                        Style="{StaticResource YellowButton}" 
+                        HorizontalAlignment="Right" 
+                        Margin="0,10,20,10" 
+                        VerticalAlignment="Center" 
+                        Click="RegisterButton_Click"/>
+            </Grid>
+        </Border>
+
+        <!-- Главная панель для отображения страниц -->
+        <Frame x:Name="MainContentFrame" VerticalAlignment="Top" Margin="0,100,0,0"/>
+    </Grid>
+</Window>
+
+
+
+
+
+
+
+
