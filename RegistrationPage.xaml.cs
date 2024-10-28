@@ -14,7 +14,7 @@ namespace CharityApp
             InitializeComponent();
         }
 
-        // Обработчик для кнопки "Вход"
+        //"Вход"
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string surname = SurnameInput.Text;
@@ -28,7 +28,7 @@ namespace CharityApp
             else
             {
                 MessageBox.Show($"Добро пожаловать, {name} {surname}!");
-                // Вызываем событие для перехода на страницу с выбором услуг
+                //событие для перехода на страницу с выбором услуг
                 LoginSuccessful?.Invoke();
             }
         }

@@ -26,7 +26,7 @@
                      Height="50" VerticalContentAlignment="Center" HorizontalAlignment="Stretch"/>
         </StackPanel>
 
-        <!-- Увеличенная кнопка "Вход" -->
+        <!-- "Вход" -->
         <Button Content="Вход" FontSize="22" FontWeight="Bold" 
                 Background="#FFD700" Foreground="Black" 
                 Padding="15,10" Margin="0,30,0,0" 

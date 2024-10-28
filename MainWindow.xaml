@@ -37,7 +37,7 @@
     </Window.Resources>
 
     <Grid>
-        <!-- Верхняя черная полоса с надписью по центру и кнопкой справа -->
+        <!-- Верхняя полоса -->
         <Border Background="#2D2F33" Height="80" VerticalAlignment="Top">
             <Grid>
                 <!-- Надпись по центру -->
@@ -48,7 +48,7 @@
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center"/>
 
-                <!-- Кнопка "Регистрация" справа -->
+                <!-- "Регистрация" -->
                 <Button Content="Регистрация" 
                         Style="{StaticResource YellowButton}" 
                         HorizontalAlignment="Right" 
